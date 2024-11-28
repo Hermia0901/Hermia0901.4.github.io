@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #add8e6; /* Light Blue Background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: black; /* Black text for better contrast */
+}
+
+.container {
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+    margin-bottom: 20px;
+}
+h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.results p {
+    margin: 5px 0;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+.results span {
+    background-color: #fffacd; /* Light Yellow Backdrop for Numbers */
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Fade-in animation for the results */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
