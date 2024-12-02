@@ -24,6 +24,7 @@ h1 {
     color: orange;
     margin-bottom: 20px;
 }
+
 h2 {
     color: orange;
     margin-bottom: 20px;
@@ -35,7 +36,7 @@ label {
     font-weight: bold;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -71,22 +72,10 @@ button:hover {
 .results p {
     margin: 5px 0;
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+    animation: fadeIn 1s forwards;
 }
 
-.results span {
-    background-color: #fffacd; /* Light Yellow Backdrop for Numbers */
-    padding: 3px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-/* Fade-in animation for the results */
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
