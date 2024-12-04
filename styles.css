@@ -7,26 +7,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 150vh;
     color: black; /* Black text for better contrast */
 }
 
 .container {
-    max-width: 400px;
+    max-width: 1400px;
     background: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left; /* Changed from center to left */
+    margin: 0 20px;
 }
 
-h1 {
+h1, h2 {
     color: orange;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: orange;
+    text-align: center; /* Keep headers centered */
     margin-bottom: 20px;
 }
 
@@ -34,6 +31,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    text-align: left; /* Ensure labels are left-aligned */
 }
 
 input, select {
@@ -43,6 +41,12 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 6px;
     box-sizing: border-box;
+}
+input, select option:disabled {
+    color: grey; /* Change the text color to grey for the disabled option */
+    background-color: transparent; /* Keep the background transparent */
+    font-style: italic; /* Optional: make the text italic for emphasis */
+    opacity: 0.7; /* Make the disabled option slightly faded */
 }
 
 button {
@@ -57,6 +61,8 @@ button {
     transition: background-color 0.3s;
 }
 
+
+
 button:hover {
     background-color: #0056b3;
 }
@@ -67,6 +73,11 @@ button:hover {
     right: 20px;
     text-align: right;
     font-size: 16px;
+    max-width: 300px; /* Prevent the text from becoming too wide */
+    padding: 10px;
+    background-color: white; /* Optional: background color to improve visibility */
+    border-radius: 8px; /* Optional: rounded corners for aesthetics */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
 }
 
 .results p {
@@ -79,3 +90,4 @@ button:hover {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
